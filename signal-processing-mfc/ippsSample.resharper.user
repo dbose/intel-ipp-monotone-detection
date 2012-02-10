@@ -1,0 +1,35 @@
+<Configuration>
+  <CompletionStatisticsManager />
+  <EditorManager>
+    <RecentFiles>
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:ippsSample.h" caret="823" visual-x="0" visual-y="153" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:ippsSignal.h" caret="2870" visual-x="0" visual-y="1207" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:ippsSample.cpp" caret="365" visual-x="0" visual-y="2703" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:ippsSignalDC.cpp" caret="535" visual-x="0" visual-y="5661" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:ippsSignalStore.cpp" caret="518" visual-x="0" visual-y="2142" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:SampleView.cpp" caret="438" visual-x="0" visual-y="2465" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:SampleDoc.cpp" caret="434" visual-x="0" visual-y="2567" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:ChildFrm.cpp" caret="139" visual-x="0" visual-y="969" />
+      <File id="CCE4AF41-1CE8-4173-9B7E-62B27CB6E1E6/d:UnknownPath/f:ippsAddC.cpp" caret="3934" visual-x="0" visual-y="2329" />
+    </RecentFiles>
+  </EditorManager>
+  <FileStructureView>
+    <AutoScrollToSource>False</AutoScrollToSource>
+    <TrackCaretLocation>False</TrackCaretLocation>
+  </FileStructureView>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <ReFormatCode>
+    <OptimizeUsings>False</OptimizeUsings>
+    <RemoveRedundantThis>False</RemoveRedundantThis>
+    <ShortenReferences>False</ShortenReferences>
+    <DecorateModifiers>False</DecorateModifiers>
+  </ReFormatCode>
+  <SharedSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </SharedSolutionDisabledTemplatesManager>
+  <UserSolutionDisabledTemplatesManager>
+    <DisabledTemplates />
+  </UserSolutionDisabledTemplatesManager>
+</Configuration>

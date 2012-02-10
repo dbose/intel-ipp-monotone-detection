@@ -1,0 +1,448 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 6.0">
+   <TITLE>Intel&#174; Integrated Performance Primitives Sample Readme</TITLE>
+	<style>
+<!--
+div.Section1
+	{page:Section1;}
+span.SpellE
+	{}
+span.GramE
+	{}
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	color:black; margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+</HEAD>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF">
+
+<CENTER>
+<h1><B><I>Intel<SUP>&reg;</SUP>
+Integrated Performance Primitives<br>
+Using the Intel</I></B><sup>®</sup><B><I> IPP Signal Processing Functions with 
+the MFC for Windows*</I></B></h1>
+</CENTER>
+
+
+<h5><A HREF="#Disclaimer">Disclaimer</A> <BR>
+<A HREF="#License_Definitions">License Definitions</A><br>
+<A HREF="#Overview">Overview</A><BR> 
+<a href="#Overview0">Intel IPP Functions used in the sample</a><br>
+<A HREF="#System_Requirements">System Requirements</A><BR>
+<A HREF="#Package_Contents">Package Contents</A> <BR>
+<A HREF="#Installation">Installation</A> <BR>
+<A HREF="#How_to_Build_Source_Code">How to Build Source Code</A><BR>
+<a href="#Running_the_Software">Running the Sample</a><BR>
+<A HREF="#Support">Technical Support and Feedback</A></h5>
+
+<h2><a NAME="Disclaimer"></a>Disclaimer</h2>
+
+<p class="MsoNormal" style="mso-layout-grid-align: none"><span style="COLOR: windowtext; FONT-SIZE: 10pt; mso-bidi-font-size: 7.5pt">INFORMATION
+IN THIS DOCUMENT IS PROVIDED IN CONNECTION WITH INTEL<sup>®</sup> PRODUCTS. NO
+LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE, TO ANY INTELLECTUAL
+PROPERTY RIGHTS IS GRANTED BY THIS DOCUMENT. EXCEPT AS PROVIDED IN INTEL'S TERMS
+AND CONDITIONS OF SALE FOR SUCH PRODUCTS, INTEL ASSUMES NO LIABILITY WHATSOEVER,
+AND INTEL DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY, RELATING TO SALE AND/OR USE
+OF INTEL PRODUCTS INCLUDING LIABILITY OR WARRANTIES RELATING TO FITNESS FOR A
+PARTICULAR PURPOSE, MERCHANTABILITY, OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR
+OTHER INTELLECTUAL PROPERTY RIGHT.
+</span></p>
+
+<p>Intel products are not intended for use in medical, life saving, life sustaining,
+critical control or safety systems, or in nuclear facility applications. Intel may make changes to 
+specifications and product descriptions at anytime, without notice.</p>
+
+<h2><a NAME="License_Definitions0"></a>License Definitions</h2>
+
+<p>By downloading and installing this sample, you hereby agree that the
+accompanying Materials are being provided to you under the terms and conditions
+of the End User License Agreement for the Intel<sup>®</sup> Integrated Performance
+Primitives product previously accepted by you. Please refer to the file <b>ippEULA.rtf</b>
+located in the root directory of your Intel<sup>®</sup> IPP product installation for more
+information.&nbsp;</p>
+
+<h2><a NAME="Overview"></a>Overview</h2>
+
+
+The <i>Using the Intel<sup>®</sup> IPP Signal Processing Functions</i> with the 
+MFC sample demonstrates how to use IPP Signal Processing functions in MFC 
+application.<p>The sample is MFC application with the corresponding workspace 
+and project files for Microsoft* Visual C++* 6.0. This application can process a 
+signal by the only one operation (addition by a constant) but you may add other 
+operations in much the same way. Besides of standard MFC classes the sample 
+involves following classes:</p>
+<dl>
+	<dt><b>CIppsSignal class</b> </dt>
+	<dd>contains signal data and provides easy calls to Intel<sup>® </sup>IPP 
+	functions </dd>
+	<dt><b>CIppsSignalStore class</b></dt>
+	<dd>provides Open and Save File commands 
+	</dd>
+	<dt><b>CIppsSignalDC class</b> </dt>
+	<dd>provides signal viewer 
+	</dd>
+	<dt><b>CIppsAddCDlg class</b> </dt>
+	<dd>gets parameters for <font face="Courier New">ippsAddC_8u_C3R</font> 
+	function by dialog 
+	</dd>
+	<dt><b>CIppsAddC</b> <b>class</b></dt>
+	<dd>processes signal by <font face="Courier New">ippsAddC_8u_C3R</font> 
+	function. 
+	</dd>
+</dl>
+<P>
+Additional information on this software as well as other Intel software 
+performance products is available at 
+<A HREF="http://developer.intel.com/software/products/">
+http://developer.intel.com/software/products/</A>.
+
+<h2><a NAME="Overview0"></a>Intel IPP Functions Used in the <i>Using the Intel® 
+IPP Signal Processing Functions with the MFC</i></h2>
+<p><span lang="EN-US"><b>ippsVectorJaehne</b> function is used for new signal 
+initialization.</span></p>
+<p><b>i</b><span lang="EN-US"><b>ppsAddC</b> function is used for signal 
+processing.</span></p>
+<p><b>ippGetStatusString</b><span lang="EN-US"> function is used for error 
+diagnostics.</span></p>
+<h2><a NAME="System_Requirements"></a>System Requirements</h2>
+
+<font size=-1>
+<B>Recommended hardware:</B>
+&nbsp;
+</font>
+<ul>
+  <li>A system based on the Intel<sup>®</sup> Pentium<sup>®</sup>
+    4 processor with 128 megabytes of RAM, or better</li>
+</ul>
+
+<font size=-1>
+<B>Hardware requirements:</B>
+</font>
+<ul>
+  <li>A system based on a Intel<sup>®</sup>
+ Pentium<sup>®</sup>
+    processor, Intel<sup>®</sup>
+ Xeon<sup>®</sup>
+ 	processor, or subsequent IA-32 processor</li>
+</ul>
+<p><font size=-1>
+<B>Software requirements:&nbsp;</B></font></p>
+<ul>
+  <li>Intel<sup>®</sup>&nbsp; IPP 5.1 for Windows, or later.</li>
+	<li>Microsoft* Windows* Millennium Edition, Windows* 2000, Windows* Server 
+	2003, or Windows* XP</li>
+  <li>Microsoft* Visual C++* 6.0 or Microsoft* Visual C++* .NET 2003</li>
+</ul>
+
+<h2><a NAME="Package_Contents"></a>Package Contents</h2>
+
+<p style="margin-bottom: 14px">The <b><i>Using the Intel® IPP Signal Processing 
+Functions with the MFC</i></b> package contains the following 
+files: </p>
+
+<table border="1" cellPadding="0" style="mso-cellspacing: 1.5pt; mso-padding-alt: 0cm 0cm 0cm 0cm" width="99%" id="table2">
+    <tr>
+      <td bgColor="#c0c0c0" colSpan="2" style="PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt" width="98%"><b>.\ipp-samples\</b></td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+ippEULA.rtf
+      </td>
+      <td style="padding: 0.75pt" width="64%">
+        End User License Agreement
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+support.txt
+      </td>
+      <td style="padding: 0.75pt" width="64%">
+        Contains information for technical support
+      </td>
+    </tr>
+    <tr>
+      <td bgColor="#c0c0c0" colSpan="2" style="PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt" width="98%"><b>
+		.\ipp-samples\signal-processing\signal-processing-mfc</b></td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+readme.htm</td>
+      <td style="padding: 0.75pt" width="64%">
+        this file</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSample.dsw</td>
+      <td style="padding: 0.75pt" width="64%">
+        Visual Studio workspace file</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSample.dsp</td>
+      <td style="padding: 0.75pt" width="64%">
+        Visual Studio project file</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ChildFrm.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the MFC document frame class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ChildFrm.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the MFC document frame class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsAddC.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the signal processing class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsAddC.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the signal processing class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsAddCDlg.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the processing parameters dialog class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsAddCDlg.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the processing parameters dialog class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSignal.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the signal class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSignal.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the signal class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSignalDC.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the signal viewer class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSignalDC.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the signal viewer class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSignalStore.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the save/load signal class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSignalStore.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the save/load signal class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSample.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the application class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSample.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the application class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSample.rc</td>
+      <td style="padding: 0.75pt" width="64%">
+        resource implementation file</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+MainFrm.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the MFC application frame class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+MainFrm.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the MFC application frame class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+resource.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        resource header file</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+SampleDoc.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the MFC document class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+SampleDoc.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the MFC document class</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+SampleView.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        implementation of the MFC view class</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+SampleView.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        interface of the MFC view class</td>
+    </tr>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+StdAfx.cpp</td>
+      <td style="padding: 0.75pt" width="64%">
+        file for precompiled headers</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+StdAfx.h</td>
+      <td style="padding: 0.75pt" width="64%">
+        standard MFC include files</td>
+    </tr>
+    <tr>
+      <td bgColor="#c0c0c0" colSpan="2" style="PADDING-BOTTOM: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-RIGHT: 0.75pt; PADDING-TOP: 0.75pt" width="98%"><b>.\ipp-samples\signal-processing\signal-processing-mfc\res</b></td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+ippsSample.ico</td>
+      <td style="padding: 0.75pt" width="64%">
+        Application icon</td>
+    </tr>
+	<tr>
+      <td style="padding: 0.75pt" width="34%">
+        ippsSample.rc2</td>
+      <td style="padding: 0.75pt" width="64%">
+        User resource file</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+SampleDoc.ico</td>
+      <td style="padding: 0.75pt" width="64%">
+        Document icon</td>
+    </tr>
+    <tr>
+      <td style="padding: 0.75pt" width="34%">
+        Toolbar.bmp</td>
+      <td style="padding: 0.75pt" width="64%">
+        Toolbar</td>
+    </tr>
+    </table>
+
+<h2><a NAME="Installation"></a>Installation</h2>
+
+<P>Extract all files in w_ipp-samples_*.zip to a desired folder. 
+Please make sure to preserve the directory structure. The files for this sample 
+will be found in the .\ipp-samples\signal-processing\signal-processing-mfc<b> </b>folder.
+
+<h2><a NAME="How_to_Build_Source_Code"></a>How to Build Source Code</h2>
+
+<P><span class="TrkFieldValue">Set up your build environment by creating an 
+environment variable named IPPROOT that points to the root directory of your 
+Intel® IPP installation. For example: IPPROOT=C:/Program 
+Files/Intel/IPP/5.1/ia32/ </span>
+<P>Open workspace file ippsSample.dsw by Microsoft* Visual C++* 6.0 or 
+Microsoft* Visual C++* .NET 2003. Build application as usual. 
+<h2><a NAME="Running_the_Software"></a>Running the Sample</h2>
+
+
+<div class="Section1">
+	<span lang="EN-US">In order to run this sample, the 
+	Intel<sup>®</sup> IPP DLLs must be on the system's path. DLLs are located in 
+	bin subdirectory of the root directory of the Intel<sup>®</sup> IPP 
+	installation (IPPROOT). This can be done by setting the PATH environment 
+	variable manually or invoking the batch file:</span><p class="code2">
+	<span lang="EN-US" style="font-size: 10pt; font-family: Courier New">%IPPROOT%\tools\<span class="SpellE">env\ippenv.bat</span></span></p>
+	<p><span lang="EN-US">When built, windows application ippsSample.exe is 
+	appeared in .</span>\ipp-samples\signal-processing\signal-processing-mfc<span lang="EN-US">\Release or </span><b>.</b>\ipp-samples\signal-processing\signal-processing-mfc<span lang="EN-US">\Debug directory. Run this application.</span></p>
+<p><font size="3">In the beginning of the session a new real Jaehne signal of
+the 16s type and length equal to 512 is created.</font></p>
+<p><font size="3">To create a new Jaehne signal, open a <span style="FONT-FAMILY: 'Courier New'; FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt">.wav</span>
+file with a signal, or save signal to a <span style="FONT-FAMILY: 'Courier New'; FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt">.wav</span>
+file using the standard Toolbar buttons or File Menu.</font></p>
+<p><font size="3">To view active signal properties (length, type and file path,
+if any), select &quot;File\Properties&quot; from the menu.</font></p>
+<p><font size="3">To process the signal by the <span style="FONT-FAMILY: 'Courier New'; FONT-SIZE: 9pt; mso-bidi-font-size: 12.0pt">ippsAddC_16s_Sfs</span>
+function:</font></p>
+<p class="MsoNormal" style="MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17.85pt; MARGIN-TOP: 0px"><font size="3"><span style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·</span><span style="FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Activate the source signal</font></p>
+<p class="MsoNormal" style="MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17.85pt; MARGIN-TOP: 0px"><font size="3"><span style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·</span><span style="FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Select &quot; Process\ippsAddC_16s_Sfs&quot; from the menu. If this
+button appears in gray color, the active signal is not the ipp16s type</font></p>
+<p class="MsoNormal" style="MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17.85pt; MARGIN-TOP: 0px"><font size="3"><span style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·</span><span style="FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The
+dialog
+window with the function parameters will appear</font></p>
+<p class="MsoNormal" style="MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17.85pt; MARGIN-TOP: 0px"><font size="3"><span style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·</span><span style="FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Enter
+the value to add and the scale factor in the dialog window and click on the
+&#8216;OK&#8217; button</font></p>
+<p class="MsoNormal" style="MARGIN-BOTTOM: 0px; MARGIN-LEFT: 17.85pt; MARGIN-TOP: 0px"><font size="3"><span style="FONT-FAMILY: Symbol; FONT-SIZE: 10pt; mso-bidi-font-size: 12.0pt">·</span><span style="FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The destination
+signal will be created</font></p>
+
+</div>
+
+<h2><a NAME="Support"></a>Technical Support and Feedback</h2>
+
+To receive support or provide feedback for <i><b>Using the Intel® IPP Signal 
+Processing Functions with the MFC</b></i>, please refer to
+the <i>&quot;Technical Support and Feedback&quot;</i> section of the release
+notes (<b>ReleaseNotes.htm</b>) provided in the Intel<sup>® </sup>IPP product installation.
+
+<div class="Section1">
+	<span lang="EN-US">Your feedback on the Intel IPP samples is very important 
+	to us and your input will be considered for future releases. The Intel IPP 
+	sample code is intended only as an example of how to use the APIs to 
+	implement algorithms in different development environments. Please submit 
+	problems with installation, compiling, linking, runtime errors or incorrect 
+	output to </span><a style="color: blue" href="https://premier.intel.com/">
+	<u><span lang="EN-US">Intel® Premier Support</span></u></a><span lang="EN-US">.
+	</span>
+	<p><span lang="EN-US">You can also share and discuss the experience of IPP 
+	sample usage with other developers at </span>
+	<a style="color: blue" href="http://softwareforums.intel.com/ids"><u>
+	<span lang="EN-US">Intel Software Developer Forum</span></u></a><span lang="EN-US">.</span></div>
+<font size = -2>
+<P>Intel, the Intel logo, Intel SpeedStep, Intel NetBurst, Intel NetStructure,
+MMX, i386, i486, Intel386, Intel486, Intel740, IntelDX2, IntelDX4,
+IntelSX2,Celeron, Intel Centrino, Intel Xeon, Intel XScale, Itanium, Pentium,
+Pentium II Xeon, Pentium III Xeon, Pentium M, and VTune are trademarks or
+registered trademarks of Intel Corporation or its subsidiaries in the United
+States and other countries. <br>
+&nbsp;<br>
+* Other names and brands may be claimed as the property of others.<br>
+&nbsp;<br>
+Copyright © 2000-2007, Intel Corporation.
+</BODY>
+</HTML>

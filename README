@@ -1,0 +1,5 @@
+A modification of IPP (DSP Library from Intel) samples (MFC/VC++) to detect
+an unknown mono-tone frequency (Goertzel is not applicable here).
+
+The core code can be found at signal-processing-mfc/ippsAddC.cpp
+in the function - CIppsAddC::ProcessSignal 
